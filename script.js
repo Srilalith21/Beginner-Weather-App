@@ -45,8 +45,9 @@ async function fetchData() {
     searchButton.innerHTML = "Search"
     searchButton.disabled = false;
   }catch(error){
-    // console.log(error);  
     searchButton.innerHTML = "Search"
+    searchButton.disabled = false;
+    alert("Invalid")
   }
 }
 
